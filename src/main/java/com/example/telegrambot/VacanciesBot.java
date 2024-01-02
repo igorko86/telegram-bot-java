@@ -19,15 +19,14 @@ import java.util.Map;
 
 @Component
 public class VacanciesBot extends TelegramLongPollingBot {
-// 6907873499:AAF_C9vbjDlPk-n454Pa25foBz_6vDpbWgQ
-
     @Autowired
     private VacancyService vacancyService;
 
     private final Map<Long, String> lastShowedVacancies = new HashMap<>();
 
     public VacanciesBot() {
-        super("6907873499:AAF_C9vbjDlPk-n454Pa25foBz_6vDpbWgQ");
+        // put bot id here
+        super("");
     }
 
     @Override
